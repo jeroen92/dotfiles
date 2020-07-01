@@ -1,0 +1,3 @@
+.config/spotify-tui/*
+.config/pulse/*
+.config/zsh/.zcompdump*
