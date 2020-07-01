@@ -1,0 +1,8 @@
+clock
+indicator
+screenshots
+effect-scale=0.4
+effect-blur=4x2
+effect-vignette=0.2:0.5
+datestr=%a %e.%m.%Y
+timestr=%k:%M

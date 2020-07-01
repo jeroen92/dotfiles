@@ -1,0 +1,10 @@
+[user]
+	email = jeroenschutrup@hotmail.nl
+	name = Jeroen Schutrup
+	signingkey = B751897C980F95416FB6659D7CDC5E3F3D666D82
+
+[commit]
+	gpgsign = true
+
+[core]
+	editor = vim
