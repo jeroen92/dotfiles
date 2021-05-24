@@ -23,6 +23,12 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 GPG_TTY=$(tty)
 export GPG_TTY
 
+export DOCKER_CLI_EXPERIMENTAL=enabled
+
+export EDITOR=vim
+
+PATH="/home/jschutrup/.local/bin:$PATH"
+
 export WORKON_HOME=~/.virtualenvs
 
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
@@ -30,3 +36,9 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 # Without this line, hitting enter in a read prompt sometimes results in a literal ^M
 # See: https://bbs.archlinux.org/viewtopic.php?id=150097
 stty icrnl
+
+# Rebind shortcuts
+bindkey "^O" clear-screen
+
+# Aliases
+alias ssh="TERM=xterm-256color ssh"
